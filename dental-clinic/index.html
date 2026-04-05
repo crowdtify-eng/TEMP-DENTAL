@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DentaFloat — Premium Dental Care | Book Your Smile with Confidence</title>
+  <meta name="description"
+    content="Experience world-class dental care with DentaFloat. Book appointments online, explore our premium services, and transform your smile with confidence.">
+  <meta name="keywords" content="dental clinic, dentist, teeth whitening, braces, root canal, dental care, oral health">
+  <meta name="author" content="DentaFloat">
+  <meta name="theme-color" content="#4A90E2">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+</head>
+
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-spinner">
+      <div class="loading-tooth"></div>
+      <span class="loading-text">DentaFloat</span>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo" id="navLogo">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36">
+              <stop offset="0%" stop-color="#4A90E2" />
+              <stop offset="100%" stop-color="#00D4AA" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M18 3C12 3 8 7 7 12C6 17 7 22 9 27C11 32 13 34 15 34C17 34 17.5 30 18 26C18.5 30 19 34 21 34C23 34 25 32 27 27C29 22 30 17 29 12C28 7 24 3 18 3Z"
+            fill="url(#logoGrad)" />
+        </svg>
+        DentaFloat
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Book</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="nav-cta">Book Now</a>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV OVERLAY -->
+  <div class="mobile-nav-overlay" id="mobileNav">
+    <a href="#hero" class="mobile-nav-link">Home</a>
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#booking" class="mobile-nav-link">Book Appointment</a>
+    <a href="#about" class="mobile-nav-link">About Us</a>
+    <a href="#testimonials" class="mobile-nav-link">Reviews</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="#booking" class="btn-primary mobile-nav-link" style="margin-top:1rem;">Book Now</a>
+  </div>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-orb hero-bg-orb-1"></div>
+    <div class="hero-bg-orb hero-bg-orb-2"></div>
+    <div class="hero-bg-orb hero-bg-orb-3"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1>Book Your Smile<br>with <span>Confidence</span></h1>
+        <p class="hero-subtitle">
+          Experience the future of dental care. Our advanced technology and compassionate team deliver brilliantly
+          beautiful smiles — painlessly, precisely, and perfectly.
+        </p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn-primary" id="heroCta">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            Book Appointment
+          </a>
+          <a href="#services" class="btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polygon points="10 8 16 12 10 16 10 8" />
+            </svg>
+            Explore Services
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-value">15K+</div>
+            <div class="hero-stat-label">Happy Patients</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">12+</div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">4.9</div>
+            <div class="hero-stat-label">Star Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="images/hero-tooth.png" alt="Advanced Dental Technology — 3D floating tooth illustration"
+            id="heroImage">
+          <div class="hero-float-card hero-float-card-1">
+            <div class="hero-float-icon blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <div>
+              <div style="font-weight:700;font-size:0.95rem;">99% Success</div>
+              <div style="font-size:0.78rem;color:var(--color-text-muted);">Treatment Rate</div>
+            </div>
+          </div>
+          <div class="hero-float-card hero-float-card-2">
+            <div class="hero-float-icon green">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+            </div>
+            <div>
+              <div style="font-weight:700;font-size:0.95rem;">Pain-Free</div>
+              <div style="font-size:0.78rem;color:var(--color-text-muted);">Modern Methods</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES SECTION ============ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="section-label">Our Services</span>
+        <h2>Premium Dental Solutions</h2>
+        <p>Cutting-edge treatments designed to give you the healthiest, most radiant smile possible.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll" id="serviceClean">
+          <div class="service-icon">🪥</div>
+          <h3>Deep Cleaning</h3>
+          <p>Professional cleaning that removes plaque & tartar, preventing gum disease for a fresh, healthy smile.</p>
+
+        </div>
+
+        <div class="service-card animate-on-scroll" id="serviceRoot">
+          <div class="service-icon">🦷</div>
+          <h3>Root Canal</h3>
+          <p>Painless root canal therapy using advanced techniques to save your natural tooth and eliminate infection.
+          </p>
+
+        </div>
+
+        <div class="service-card animate-on-scroll" id="serviceBraces">
+          <div class="service-icon">😁</div>
+          <h3>Braces & Aligners</h3>
+          <p>Invisible aligners and modern braces for perfectly straight teeth — comfortable and barely noticeable.</p>
+
+        </div>
+
+        <div class="service-card animate-on-scroll" id="serviceWhiten">
+          <div class="service-icon">✨</div>
+          <h3>Teeth Whitening</h3>
+          <p>Professional-grade whitening that brightens your smile up to 8 shades in just one visit.</p>
+
+        </div>
+
+        <div class="service-card animate-on-scroll" id="serviceImplant">
+          <div class="service-icon">🔩</div>
+          <h3>Dental Implants</h3>
+          <p>Permanent tooth replacement with titanium implants that look, feel, and function like natural teeth.</p>
+
+        </div>
+
+        <div class="service-card animate-on-scroll" id="serviceCosm">
+          <div class="service-icon">💎</div>
+          <h3>Cosmetic Dentistry</h3>
+          <p>Veneers, bonding, and smile makeovers crafted to perfection for a red-carpet-ready smile.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING SECTION ============ -->
+  <section class="booking" id="booking">
+    <div class="booking-bg-orb"></div>
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="section-label">Appointment</span>
+        <h2>Book Your Visit</h2>
+        <p>Schedule your appointment in seconds. We'll confirm within the hour.</p>
+      </div>
+
+      <div class="booking-card animate-on-scroll" id="bookingCard">
+        <form class="booking-form" id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bookingName">Full Name</label>
+              <input type="text" id="bookingName" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="bookingPhone">Phone Number</label>
+              <input type="tel" id="bookingPhone" placeholder="+1 (555) 123-4567" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bookingService">Select Service</label>
+              <select id="bookingService" required>
+                <option value="" disabled selected>Choose a service...</option>
+                <option value="cleaning">Deep Cleaning</option>
+                <option value="root-canal">Root Canal</option>
+                <option value="braces">Braces & Aligners</option>
+                <option value="whitening">Teeth Whitening</option>
+                <option value="implants">Dental Implants</option>
+                <option value="cosmetic">Cosmetic Dentistry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bookingDate">Preferred Date</label>
+              <input type="date" id="bookingDate" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <span class="time-slots-label">Select Time Slot</span>
+            <div class="time-slots" id="timeSlots">
+              <div class="time-slot" data-time="09:00 AM">09:00 AM</div>
+              <div class="time-slot" data-time="10:00 AM">10:00 AM</div>
+              <div class="time-slot" data-time="11:00 AM">11:00 AM</div>
+              <div class="time-slot" data-time="12:00 PM">12:00 PM</div>
+              <div class="time-slot" data-time="02:00 PM">02:00 PM</div>
+              <div class="time-slot" data-time="03:00 PM">03:00 PM</div>
+              <div class="time-slot" data-time="04:00 PM">04:00 PM</div>
+              <div class="time-slot" data-time="05:00 PM">05:00 PM</div>
+            </div>
+          </div>
+
+          <div class="booking-submit">
+            <button type="submit" class="btn-primary" id="bookingSubmit">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              Confirm Appointment
+            </button>
+          </div>
+        </form>
+
+        <!-- Success State -->
+        <div class="booking-success" id="bookingSuccess">
+          <div class="success-icon">✓</div>
+          <h3>Appointment Booked!</h3>
+          <p>We'll send you a confirmation shortly. Thank you for choosing DentaFloat!</p>
+          <button class="btn-primary" id="bookAnother" style="margin-top:1.5rem;">
+            Book Another Appointment
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT SECTION ============ -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-image-area animate-on-scroll">
+        <div class="about-image-wrapper">
+          <img src="images/dentist.png" alt="Dr. Sarah Mitchell — Lead Dentist at DentaFloat" id="aboutImage">
+        </div>
+        <div class="about-float-badge">
+          <div class="about-float-badge-icon">🏆</div>
+          <div class="about-float-badge-text">
+            Award Winner
+            <span>Best Dentist 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content animate-on-scroll">
+        <span class="section-label">About Us</span>
+        <h2>Meet Dr. Sarah Mitchell</h2>
+        <p>
+          With over 12 years of experience and a passion for innovation, Dr. Mitchell combines cutting-edge technology
+          with gentle, personalized care. Our state-of-the-art clinic is designed to make every visit comfortable,
+          efficient, and — dare we say — enjoyable.
+        </p>
+        <p>
+          We believe dental care should be accessible, painless, and transformative. That's why we've built a practice
+          around patient comfort, advanced technology, and outstanding results.
+        </p>
+
+        <div class="about-stats">
+          <div class="about-stat">
+            <div class="about-stat-value">12+</div>
+            <div class="about-stat-label">Years Experience</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-value">15K+</div>
+            <div class="about-stat-label">Happy Patients</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-value">25+</div>
+            <div class="about-stat-label">Awards Won</div>
+          </div>
+        </div>
+
+        <a href="#booking" class="btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+          Schedule a Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS SECTION ============ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="section-label">Testimonials</span>
+        <h2>What Our Patients Say</h2>
+        <p>Real stories from real people who transformed their smiles with DentaFloat.</p>
+      </div>
+
+      <div class="testimonials-track-wrapper animate-on-scroll">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card" id="testimonial1">
+            <div class="testimonial-header">
+              <img src="images/testimonial-1.png" alt="Robert Chen" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-name">Robert Chen</div>
+                <div class="testimonial-role">Business Owner</div>
+              </div>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Absolutely incredible experience. The clinic feels like stepping into the
+              future. My root canal was completely painless — I couldn't believe it. Dr. Mitchell is a genius."</p>
+          </div>
+
+          <div class="testimonial-card" id="testimonial2">
+            <div class="testimonial-header">
+              <img src="images/testimonial-2.png" alt="Emma Rodriguez" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-name">Emma Rodriguez</div>
+                <div class="testimonial-role">Marketing Director</div>
+              </div>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"I was terrified of dentists my entire life. DentaFloat changed everything. The
+              staff is so warm and the technology makes procedures feel effortless. My smile has never looked better!"
+            </p>
+          </div>
+
+          <div class="testimonial-card" id="testimonial3">
+            <div class="testimonial-header">
+              <img src="images/testimonial-3.png" alt="Margaret Thompson" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-name">Margaret Thompson</div>
+                <div class="testimonial-role">Retired Teacher</div>
+              </div>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"At 68, I thought my best smile was behind me. Dr. Mitchell proved me wrong with
+              the most beautiful implants. I smile more now than I did at 20. Forever grateful!"</p>
+          </div>
+
+          <div class="testimonial-card" id="testimonial4">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"
+                style="background:var(--gradient-primary);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.2rem;">
+                JK</div>
+              <div>
+                <div class="testimonial-name">James Kim</div>
+                <div class="testimonial-role">Software Engineer</div>
+              </div>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The online booking was seamless, the clinic is spotless, and the results speak
+              for themselves. Got my teeth whitened and the difference is night and day. Highly recommend!"</p>
+          </div>
+
+          <div class="testimonial-card" id="testimonial5">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"
+                style="background:linear-gradient(135deg,#00D4AA,#4A90E2);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.2rem;">
+                AP</div>
+              <div>
+                <div class="testimonial-name">Aisha Patel</div>
+                <div class="testimonial-role">Fitness Instructor</div>
+              </div>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"From Invisalign to regular cleanings, every visit has been exceptional. The
+              floating clinic vibe makes you forget you're at a dentist. My whole family goes here now!"</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-nav">
+        <button class="testimonial-nav-btn" id="testimonialPrev" aria-label="Previous testimonial">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+        <button class="testimonial-nav-btn" id="testimonialNext" aria-label="Next testimonial">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="section-label">Get In Touch</span>
+        <h2>Visit Our Clinic</h2>
+        <p>We'd love to hear from you. Reach out or visit us at our state-of-the-art facility.</p>
+      </div>
+
+      <div class="contact-grid animate-on-scroll">
+        <div class="contact-info">
+          <div class="contact-item" id="contactPhone">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div class="contact-item-content">
+              <h4>Call Us</h4>
+              <p>+1 (555) 234-5678</p>
+            </div>
+          </div>
+
+          <div class="contact-item" id="contactEmail">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div class="contact-item-content">
+              <h4>Email Us</h4>
+              <p>hello@dentafloat.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item" id="contactLocation">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div class="contact-item-content">
+              <h4>Visit Us</h4>
+              <p>123 Smile Avenue, Suite 200<br>San Francisco, CA 94102</p>
+            </div>
+          </div>
+
+          <div class="contact-item" id="contactHours">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div class="contact-item-content">
+              <h4>Working Hours</h4>
+              <p>Mon–Fri: 9:00AM – 6:00PM<br>Sat: 9:00AM – 2:00PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064d0eafc5b%3A0x5bfbd486e918763!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="DentaFloat Clinic Location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M18 3C12 3 8 7 7 12C6 17 7 22 9 27C11 32 13 34 15 34C17 34 17.5 30 18 26C18.5 30 19 34 21 34C23 34 25 32 27 27C29 22 30 17 29 12C28 7 24 3 18 3Z"
+            fill="url(#logoGrad2)" />
+          <defs>
+            <linearGradient id="logoGrad2" x1="0" y1="0" x2="36" y2="36">
+              <stop offset="0%" stop-color="#4A90E2" />
+              <stop offset="100%" stop-color="#00D4AA" />
+            </linearGradient>
+          </defs>
+        </svg>
+        DentaFloat
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Book</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copy">
+        © 2026 DentaFloat. All rights reserved. Crafted with care for your smile.
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/15552345678" target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat"
+    aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
